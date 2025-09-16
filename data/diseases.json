@@ -1,0 +1,760 @@
+{
+  "fever": {
+    "name": "Fever",
+    "description": "A temporary increase in body temperature, often due to illness",
+    "symptoms": [
+      "high temperature (above 100.4°F/38°C)",
+      "chills and shivering",
+      "sweating",
+      "headache",
+      "muscle aches",
+      "fatigue",
+      "loss of appetite",
+      "dehydration"
+    ],
+    "causes": [
+      "viral infections (flu, common cold)",
+      "bacterial infections",
+      "heat exhaustion",
+      "certain medications",
+      "vaccines",
+      "inflammatory conditions"
+    ],
+    "prevention": [
+      "wash hands frequently",
+      "avoid close contact with sick people",
+      "stay hydrated",
+      "get adequate rest",
+      "maintain good hygiene",
+      "eat a balanced diet",
+      "exercise regularly"
+    ],
+    "treatment": [
+      "rest and sleep",
+      "drink plenty of fluids",
+      "take fever reducers (acetaminophen, ibuprofen)",
+      "use cool compresses",
+      "wear light clothing",
+      "consult doctor if fever persists"
+    ],
+    "emergency_signs": [
+      "temperature over 103°F (39.4°C)",
+      "difficulty breathing",
+      "chest pain",
+      "persistent vomiting",
+      "severe headache",
+      "confusion or irritability",
+      "signs of dehydration"
+    ]
+  },
+  "diabetes": {
+    "name": "Diabetes Mellitus",
+    "description": "A group of metabolic disorders characterized by high blood sugar levels",
+    "symptoms": [
+      "frequent urination",
+      "excessive thirst",
+      "unexplained weight loss",
+      "increased hunger",
+      "fatigue",
+      "blurred vision",
+      "slow-healing cuts",
+      "frequent infections"
+    ],
+    "causes": [
+      "genetics and family history",
+      "autoimmune factors (Type 1)",
+      "insulin resistance (Type 2)",
+      "obesity",
+      "physical inactivity",
+      "age (over 45)",
+      "gestational factors"
+    ],
+    "prevention": [
+      "maintain healthy weight",
+      "exercise regularly",
+      "eat a balanced diet",
+      "limit processed foods",
+      "avoid sugary drinks",
+      "don't smoke",
+      "regular health screenings"
+    ],
+    "treatment": [
+      "blood sugar monitoring",
+      "insulin therapy (Type 1)",
+      "oral medications (Type 2)",
+      "diet management",
+      "regular exercise",
+      "weight management",
+      "regular doctor visits"
+    ],
+    "emergency_signs": [
+      "severe dehydration",
+      "persistent vomiting",
+      "blood sugar over 400 mg/dL",
+      "ketones in urine",
+      "difficulty breathing",
+      "confusion",
+      "loss of consciousness"
+    ]
+  },
+  "hypertension": {
+    "name": "High Blood Pressure (Hypertension)",
+    "description": "A condition where blood pressure in arteries is persistently elevated",
+    "symptoms": [
+      "often no symptoms (silent killer)",
+      "headaches",
+      "shortness of breath",
+      "nosebleeds",
+      "chest pain",
+      "dizziness",
+      "blurred vision"
+    ],
+    "causes": [
+      "age",
+      "family history",
+      "obesity",
+      "lack of physical activity",
+      "high sodium diet",
+      "excessive alcohol",
+      "stress",
+      "chronic kidney disease"
+    ],
+    "prevention": [
+      "maintain healthy weight",
+      "exercise regularly",
+      "eat low-sodium diet",
+      "limit alcohol consumption",
+      "don't smoke",
+      "manage stress",
+      "get enough sleep"
+    ],
+    "treatment": [
+      "lifestyle modifications",
+      "medication (ACE inhibitors, diuretics)",
+      "regular blood pressure monitoring",
+      "dietary changes",
+      "weight management",
+      "stress reduction techniques"
+    ],
+    "emergency_signs": [
+      "blood pressure over 180/120",
+      "severe headache",
+      "chest pain",
+      "difficulty breathing",
+      "vision problems",
+      "stroke symptoms",
+      "heart attack symptoms"
+    ]
+  },
+  "common_cold": {
+    "name": "Common Cold",
+    "description": "A viral infection of the upper respiratory tract",
+    "symptoms": [
+      "runny or stuffy nose",
+      "sneezing",
+      "cough",
+      "sore throat",
+      "mild headache",
+      "low-grade fever",
+      "fatigue",
+      "body aches"
+    ],
+    "causes": [
+      "rhinoviruses",
+      "coronaviruses",
+      "respiratory syncytial virus",
+      "airborne droplets",
+      "direct contact with infected surfaces"
+    ],
+    "prevention": [
+      "wash hands frequently",
+      "avoid touching face",
+      "stay away from sick people",
+      "disinfect surfaces",
+      "maintain good hygiene",
+      "boost immune system",
+      "get adequate sleep"
+    ],
+    "treatment": [
+      "rest and sleep",
+      "drink plenty of fluids",
+      "use humidifier",
+      "gargle with salt water",
+      "over-the-counter medications",
+      "throat lozenges",
+      "avoid antibiotics (viral infection)"
+    ],
+    "emergency_signs": [
+      "difficulty breathing",
+      "high fever (over 101.5°F)",
+      "severe headache",
+      "persistent vomiting",
+      "chest pain",
+      "symptoms lasting over 10 days"
+    ]
+  },
+  "covid19": {
+    "name": "COVID-19",
+    "description": "Coronavirus disease caused by SARS-CoV-2 virus",
+    "symptoms": [
+      "fever or chills",
+      "cough",
+      "shortness of breath",
+      "fatigue",
+      "muscle aches",
+      "headache",
+      "loss of taste or smell",
+      "sore throat",
+      "congestion",
+      "nausea or vomiting",
+      "diarrhea"
+    ],
+    "causes": [
+      "SARS-CoV-2 virus",
+      "airborne transmission",
+      "respiratory droplets",
+      "close contact with infected person",
+      "touching contaminated surfaces"
+    ],
+    "prevention": [
+      "get vaccinated",
+      "wear masks in public",
+      "maintain social distancing",
+      "wash hands frequently",
+      "avoid crowded places",
+      "improve ventilation",
+      "stay home when sick"
+    ],
+    "treatment": [
+      "isolation and rest",
+      "monitor symptoms",
+      "drink plenty of fluids",
+      "over-the-counter fever reducers",
+      "consult healthcare provider",
+      "antiviral medications (if prescribed)",
+      "oxygen therapy (severe cases)"
+    ],
+    "emergency_signs": [
+      "difficulty breathing",
+      "persistent chest pain",
+      "confusion",
+      "inability to wake or stay awake",
+      "bluish lips or face",
+      "severe dehydration"
+    ]
+  },
+  "malaria": {
+    "name": "Malaria",
+    "description": "Mosquito-borne infectious disease caused by parasites",
+    "symptoms": [
+      "high fever",
+      "chills",
+      "flu-like symptoms",
+      "nausea and vomiting",
+      "headache",
+      "muscle pain",
+      "fatigue",
+      "sweating"
+    ],
+    "causes": [
+      "Plasmodium parasites",
+      "Anopheles mosquito bites",
+      "blood transfusion (rare)",
+      "mother to baby transmission",
+      "contaminated needles"
+    ],
+    "prevention": [
+      "use mosquito nets",
+      "apply insect repellent",
+      "wear long-sleeved clothing",
+      "eliminate standing water",
+      "take antimalarial medication",
+      "avoid outdoor activities at dawn/dusk"
+    ],
+    "treatment": [
+      "antimalarial medications",
+      "hospitalization (severe cases)",
+      "supportive care",
+      "fluid management",
+      "fever management",
+      "complete prescribed course"
+    ],
+    "emergency_signs": [
+      "severe anemia",
+      "kidney failure",
+      "seizures",
+      "mental confusion",
+      "difficulty breathing",
+      "low blood pressure"
+    ]
+  },
+  "dengue": {
+    "name": "Dengue Fever",
+    "description": "Viral infection transmitted by Aedes mosquitoes",
+    "symptoms": [
+      "sudden onset fever",
+      "severe headache",
+      "eye pain",
+      "muscle and joint pain",
+      "skin rash",
+      "nausea and vomiting",
+      "mild bleeding"
+    ],
+    "causes": [
+      "dengue virus (DENV)",
+      "Aedes aegypti mosquito",
+      "Aedes albopictus mosquito",
+      "person-to-mosquito-to-person transmission"
+    ],
+    "prevention": [
+      "eliminate mosquito breeding sites",
+      "use mosquito repellent",
+      "wear protective clothing",
+      "use bed nets",
+      "maintain clean surroundings",
+      "empty water containers"
+    ],
+    "treatment": [
+      "paracetamol for fever",
+      "adequate fluid intake",
+      "bed rest",
+      "avoid aspirin",
+      "monitor platelet count",
+      "hospital care (severe cases)"
+    ],
+    "emergency_signs": [
+      "severe abdominal pain",
+      "persistent vomiting",
+      "bleeding",
+      "difficulty breathing",
+      "low platelet count",
+      "plasma leakage"
+    ]
+  },
+  "tuberculosis": {
+    "name": "Tuberculosis (TB)",
+    "description": "Bacterial infection that primarily affects the lungs",
+    "symptoms": [
+      "persistent cough (3+ weeks)",
+      "coughing up blood",
+      "chest pain",
+      "weakness or fatigue",
+      "weight loss",
+      "loss of appetite",
+      "chills",
+      "fever",
+      "night sweats"
+    ],
+    "causes": [
+      "Mycobacterium tuberculosis",
+      "airborne transmission",
+      "close contact with infected person",
+      "weakened immune system",
+      "poor living conditions"
+    ],
+    "prevention": [
+      "BCG vaccination",
+      "avoid close contact with TB patients",
+      "improve ventilation",
+      "maintain good nutrition",
+      "treat latent TB infection",
+      "HIV testing and treatment"
+    ],
+    "treatment": [
+      "antibiotics (6-9 months)",
+      "directly observed therapy",
+      "isolation (active TB)",
+      "regular monitoring",
+      "complete medication course",
+      "nutritional support"
+    ],
+    "emergency_signs": [
+      "coughing up large amounts of blood",
+      "difficulty breathing",
+      "chest pain",
+      "severe weight loss",
+      "persistent high fever"
+    ]
+  },
+  "asthma": {
+    "name": "Asthma",
+    "description": "A chronic respiratory condition where airways become inflamed and narrowed",
+    "symptoms": [
+      "wheezing",
+      "shortness of breath",
+      "chest tightness",
+      "coughing (especially at night)",
+      "difficulty breathing during exercise",
+      "rapid breathing",
+      "fatigue during physical activity"
+    ],
+    "causes": [
+      "genetic factors",
+      "environmental allergens",
+      "air pollution",
+      "respiratory infections",
+      "stress",
+      "cold air",
+      "exercise"
+    ],
+    "prevention": [
+      "avoid known triggers",
+      "use air purifiers",
+      "keep home clean and dust-free",
+      "get vaccinated against flu",
+      "exercise regularly with proper warm-up",
+      "manage stress",
+      "avoid smoking and secondhand smoke"
+    ],
+    "treatment": [
+      "use prescribed inhaler",
+      "take controller medications as directed",
+      "avoid triggers",
+      "have an asthma action plan",
+      "regular check-ups with doctor",
+      "emergency inhaler always available",
+      "breathing exercises"
+    ],
+    "emergency_signs": [
+      "severe difficulty breathing",
+      "unable to speak in full sentences",
+      "blue lips or fingernails",
+      "chest retractions",
+      "peak flow readings in red zone"
+    ]
+  },
+  "heart_disease": {
+    "name": "Heart Disease",
+    "description": "A group of conditions affecting the heart and blood vessels",
+    "symptoms": [
+      "chest pain or discomfort",
+      "shortness of breath",
+      "pain in neck, jaw, throat, or back",
+      "fatigue",
+      "swelling in legs, ankles, feet",
+      "irregular heartbeat",
+      "dizziness or lightheadedness"
+    ],
+    "causes": [
+      "high blood pressure",
+      "high cholesterol",
+      "smoking",
+      "diabetes",
+      "obesity",
+      "family history",
+      "sedentary lifestyle",
+      "stress"
+    ],
+    "prevention": [
+      "eat heart-healthy diet",
+      "exercise regularly",
+      "maintain healthy weight",
+      "don't smoke",
+      "limit alcohol",
+      "manage stress",
+      "control blood pressure and cholesterol",
+      "regular health screenings"
+    ],
+    "treatment": [
+      "medications as prescribed",
+      "lifestyle changes",
+      "cardiac rehabilitation",
+      "regular monitoring",
+      "stress management",
+      "dietary modifications",
+      "surgical procedures if needed"
+    ],
+    "emergency_signs": [
+      "severe chest pain",
+      "difficulty breathing",
+      "loss of consciousness",
+      "severe sweating",
+      "nausea and vomiting with chest pain"
+    ]
+  },
+  "migraine": {
+    "name": "Migraine",
+    "description": "A neurological condition characterized by intense, recurring headaches",
+    "symptoms": [
+      "severe throbbing headache",
+      "sensitivity to light",
+      "sensitivity to sound",
+      "nausea and vomiting",
+      "visual disturbances (aura)",
+      "dizziness",
+      "fatigue"
+    ],
+    "causes": [
+      "hormonal changes",
+      "stress",
+      "certain foods",
+      "lack of sleep",
+      "dehydration",
+      "bright lights",
+      "strong smells",
+      "weather changes"
+    ],
+    "prevention": [
+      "identify and avoid triggers",
+      "maintain regular sleep schedule",
+      "stay hydrated",
+      "manage stress",
+      "regular meals",
+      "limit caffeine",
+      "regular exercise"
+    ],
+    "treatment": [
+      "pain relief medications",
+      "rest in dark, quiet room",
+      "cold or warm compress",
+      "preventive medications",
+      "stress management",
+      "regular sleep pattern",
+      "dietary modifications"
+    ],
+    "emergency_signs": [
+      "sudden severe headache",
+      "headache with fever and stiff neck",
+      "headache with confusion",
+      "headache after head injury",
+      "sudden change in headache pattern"
+    ]
+  },
+  "anxiety": {
+    "name": "Anxiety Disorder",
+    "description": "A mental health condition characterized by excessive worry and fear",
+    "symptoms": [
+      "excessive worry",
+      "restlessness",
+      "rapid heartbeat",
+      "sweating",
+      "trembling",
+      "difficulty concentrating",
+      "sleep problems",
+      "fatigue"
+    ],
+    "causes": [
+      "genetics",
+      "brain chemistry",
+      "traumatic events",
+      "chronic stress",
+      "medical conditions",
+      "substance abuse",
+      "personality factors"
+    ],
+    "prevention": [
+      "regular exercise",
+      "adequate sleep",
+      "stress management",
+      "limit caffeine and alcohol",
+      "healthy diet",
+      "social support",
+      "mindfulness and meditation"
+    ],
+    "treatment": [
+      "therapy (CBT, counseling)",
+      "medications if prescribed",
+      "relaxation techniques",
+      "regular exercise",
+      "stress management",
+      "support groups",
+      "lifestyle changes"
+    ],
+    "emergency_signs": [
+      "thoughts of self-harm",
+      "severe panic attacks",
+      "inability to function daily",
+      "substance abuse",
+      "complete social withdrawal"
+    ]
+  },
+  "depression": {
+    "name": "Depression",
+    "description": "A mental health disorder characterized by persistent sadness and loss of interest",
+    "symptoms": [
+      "persistent sadness",
+      "loss of interest in activities",
+      "fatigue",
+      "changes in appetite",
+      "sleep disturbances",
+      "feelings of worthlessness",
+      "difficulty concentrating",
+      "thoughts of death"
+    ],
+    "causes": [
+      "genetics",
+      "brain chemistry imbalance",
+      "life events",
+      "medical conditions",
+      "medications",
+      "substance abuse",
+      "seasonal changes"
+    ],
+    "prevention": [
+      "regular exercise",
+      "healthy diet",
+      "adequate sleep",
+      "stress management",
+      "social connections",
+      "avoid alcohol and drugs",
+      "regular routine"
+    ],
+    "treatment": [
+      "therapy (CBT, interpersonal)",
+      "medications if prescribed",
+      "support groups",
+      "lifestyle changes",
+      "exercise therapy",
+      "light therapy",
+      "stress reduction"
+    ],
+    "emergency_signs": [
+      "thoughts of suicide",
+      "thoughts of self-harm",
+      "complete inability to function",
+      "psychotic symptoms",
+      "severe agitation"
+    ]
+  },
+  "gastritis": {
+    "name": "Gastritis",
+    "description": "Inflammation of the stomach lining causing digestive problems",
+    "symptoms": [
+      "stomach pain or burning",
+      "nausea and vomiting",
+      "bloating",
+      "loss of appetite",
+      "indigestion",
+      "black or bloody stools",
+      "feeling full quickly"
+    ],
+    "causes": [
+      "H. pylori bacteria",
+      "excessive alcohol consumption",
+      "NSAIDs overuse",
+      "stress",
+      "spicy foods",
+      "autoimmune disorders",
+      "bile reflux"
+    ],
+    "prevention": [
+      "avoid spicy and acidic foods",
+      "limit alcohol consumption",
+      "don't smoke",
+      "manage stress",
+      "eat smaller, frequent meals",
+      "avoid NSAIDs when possible",
+      "practice good hygiene"
+    ],
+    "treatment": [
+      "antacids for symptom relief",
+      "proton pump inhibitors",
+      "H. pylori treatment if present",
+      "dietary modifications",
+      "stress management",
+      "avoid irritating substances",
+      "probiotics"
+    ],
+    "emergency_signs": [
+      "severe abdominal pain",
+      "persistent vomiting",
+      "blood in vomit",
+      "black, tarry stools",
+      "signs of severe dehydration"
+    ]
+  },
+  "arthritis": {
+    "name": "Arthritis",
+    "description": "Joint inflammation causing pain, stiffness, and reduced mobility",
+    "symptoms": [
+      "joint pain",
+      "stiffness",
+      "swelling",
+      "reduced range of motion",
+      "warmth around joints",
+      "fatigue",
+      "morning stiffness"
+    ],
+    "causes": [
+      "age-related wear and tear",
+      "autoimmune response",
+      "genetics",
+      "previous injuries",
+      "obesity",
+      "infections",
+      "repetitive stress"
+    ],
+    "prevention": [
+      "maintain healthy weight",
+      "regular exercise",
+      "protect joints from injury",
+      "eat anti-inflammatory foods",
+      "avoid repetitive stress",
+      "stay active",
+      "proper posture"
+    ],
+    "treatment": [
+      "anti-inflammatory medications",
+      "physical therapy",
+      "regular exercise",
+      "hot and cold therapy",
+      "weight management",
+      "joint protection techniques",
+      "stress management"
+    ],
+    "emergency_signs": [
+      "sudden severe joint pain",
+      "inability to move joint",
+      "significant swelling",
+      "joint deformity",
+      "signs of infection"
+    ]
+  },
+  "kidney_stones": {
+    "name": "Kidney Stones",
+    "description": "Hard deposits of minerals and salts that form in the kidneys",
+    "symptoms": [
+      "severe pain in side and back",
+      "pain that radiates to groin",
+      "painful urination",
+      "blood in urine",
+      "nausea and vomiting",
+      "frequent urination",
+      "cloudy or foul-smelling urine"
+    ],
+    "causes": [
+      "dehydration",
+      "high-sodium diet",
+      "obesity",
+      "family history",
+      "certain medications",
+      "medical conditions",
+      "high protein diet"
+    ],
+    "prevention": [
+      "drink plenty of water",
+      "limit sodium intake",
+      "reduce animal protein",
+      "limit oxalate-rich foods",
+      "get adequate calcium",
+      "maintain healthy weight",
+      "limit sugar intake"
+    ],
+    "treatment": [
+      "increase fluid intake",
+      "pain medications",
+      "medical procedures if needed",
+      "dietary changes",
+      "medications to help pass stones",
+      "shock wave therapy",
+      "surgical removal if necessary"
+    ],
+    "emergency_signs": [
+      "severe pain with nausea",
+      "blood in urine",
+      "inability to urinate",
+      "fever with pain",
+      "persistent vomiting"
+    ]
+  }
+}

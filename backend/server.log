@@ -1,0 +1,33 @@
+nohup: ignoring input
+WARNING:__main__:Gemini API key not found, using rule-based system only
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+ * Serving Flask app 'integrated_app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.119:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:__main__:Gemini API key not found, using rule-based system only
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:06:20] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:07:26] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:07:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:17] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:17] "GET /script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:17] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:17] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:17] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:21] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:24] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:28] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:34] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:40] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:09:57] "POST /api/symptoms-check HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:13:40] "POST /api/chat HTTP/1.1" 200 -

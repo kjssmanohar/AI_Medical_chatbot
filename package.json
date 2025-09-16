@@ -1,0 +1,56 @@
+{
+  "name": "ai-medical-chatbot",
+  "version": "1.0.0",
+  "description": "AI-Driven Public Health Chatbot for Disease Awareness - SIH 2025",
+  "main": "backend/app.py",
+  "scripts": {
+    "start": "python backend/app.py",
+    "dev": "python backend/app.py",
+    "install": "pip install -r requirements.txt",
+    "test": "python -m pytest tests/",
+    "lint": "flake8 backend/",
+    "serve-frontend": "python -m http.server 8080 --directory frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjssmanohar/AI_Medical_chatbot"
+  },
+  "keywords": [
+    "medical",
+    "chatbot",
+    "healthcare",
+    "ai",
+    "sih2025",
+    "disease-awareness",
+    "multilingual",
+    "emergency"
+  ],
+  "author": "SIH 2025 Team",
+  "license": "MIT",
+  "dependencies": {
+    "flask": "^2.3.3",
+    "flask-cors": "^4.0.0",
+    "transformers": "^4.35.0",
+    "torch": "^2.1.0",
+    "nltk": "^3.8.1",
+    "googletrans": "^4.0.0rc1",
+    "pandas": "^2.1.0",
+    "scikit-learn": "^1.3.0"
+  },
+  "engines": {
+    "python": ">=3.8.0"
+  },
+  "sih2025": {
+    "problem_statement": "AI-Driven Public Health Chatbot for Disease Awareness",
+    "organization": "Government of Odisha",
+    "category": "Software",
+    "features": [
+      "AI-powered medical chatbot",
+      "Multi-language support",
+      "Disease information database",
+      "Symptom checker",
+      "Emergency contact integration",
+      "Regional health information"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+nohup: ignoring input
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+ * Serving Flask app 'integrated_app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.119:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1758051306.317480  117102 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:35:08] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1758051820.151018  121079 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 19:43:42] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145

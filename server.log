@@ -1,0 +1,73 @@
+nohup: ignoring input
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+ * Serving Flask app 'integrated_app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.119:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:46:43] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:47:02] "GET /api/health-tips HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:47:02] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:20] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:51] "[36mGET /script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:51] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:52] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:52] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:52] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:48:59] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:49:03] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:49:12] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:49:14] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 18:49:16] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+WARNING:__main__:Gemini API key not found, using rule-based system only
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+WARNING:__main__:Gemini API key not found, using rule-based system only
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+  File "/workspaces/AI_Medical_chatbot/backend/integrated_app.py", line 277
+    'message': 'I couldn\'t identify specific conditions based on your symptoms. Please provide more details or consult a healthcare professional.'
+IndentationError: unexpected indent

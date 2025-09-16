@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Medical Chatbot - Disease Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-user-md"></i>
+                    <h1>AI Medical Assistant</h1>
+                </div>
+                <div class="header-info">
+                    <span class="sih-badge">SIH 2025</span>
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी</option>
+                        <option value="te">తెలుగు</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="bn">বাংলা</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Navigation Tabs -->
+            <nav class="nav-tabs">
+                <button class="tab-btn active" data-tab="chat">
+                    <i class="fas fa-comments"></i>
+                    Chat Assistant
+                </button>
+                <button class="tab-btn" data-tab="symptoms">
+                    <i class="fas fa-stethoscope"></i>
+                    Symptom Checker
+                </button>
+                <button class="tab-btn" data-tab="diseases">
+                    <i class="fas fa-book-medical"></i>
+                    Disease Info
+                </button>
+                <button class="tab-btn" data-tab="emergency">
+                    <i class="fas fa-ambulance"></i>
+                    Emergency
+                </button>
+            </nav>
+
+            <!-- Chat Tab -->
+            <div id="chat" class="tab-content active">
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! I'm your Enhanced AI Medical Assistant. I can help you with:</p>
+                                <ul>
+                                    <li>🏥 Disease information and awareness (16+ conditions)</li>
+                                    <li>🔍 Advanced symptom analysis</li>
+                                    <li>🛡️ Prevention guidelines and health tips</li>
+                                    <li>🚨 Emergency contacts and first aid</li>
+                                    <li>🧠 Mental health support</li>
+                                    <li>🥗 Nutrition and wellness advice</li>
+                                </ul>
+                                <p>How can I assist you today?</p>
+                                <div class="disclaimer">
+                                    <small><i class="fas fa-exclamation-triangle"></i> This is for informational purposes only. Always consult healthcare professionals for medical advice.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <div class="quick-questions">
+                            <button class="quick-btn" onclick="sendQuickMessage('What are the symptoms of fever?')">Fever symptoms</button>
+                            <button class="quick-btn" onclick="sendQuickMessage('How to prevent diabetes?')">Diabetes prevention</button>
+                            <button class="quick-btn" onclick="sendQuickMessage('Emergency contacts')">Emergency help</button>
+                            <button class="quick-btn" onclick="sendQuickMessage('Health tips for daily wellness')">Health tips</button>
+                            <button class="quick-btn" onclick="sendQuickMessage('Tell me about anxiety')">Mental health</button>
+                            <button class="quick-btn" onclick="sendQuickMessage('First aid for cuts')">First aid</button>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="messageInput" placeholder="Ask about symptoms, diseases, or health concerns...">
+                            <button id="sendButton">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Symptoms Tab -->
+            <div id="symptoms" class="tab-content">
+                <div class="symptoms-checker">
+                    <h2>Symptom Checker</h2>
+                    <p>Describe your symptoms and get information about possible conditions.</p>
+                    <div class="symptoms-form">
+                        <textarea id="symptomsInput" placeholder="Describe your symptoms (e.g., fever, headache, cough...)"></textarea>
+                        <button id="checkSymptomsBtn" class="primary-btn">
+                            <i class="fas fa-search"></i>
+                            Check Symptoms
+                        </button>
+                    </div>
+                    <div id="symptomsResults" class="results-container"></div>
+                </div>
+            </div>
+
+            <!-- Diseases Tab -->
+            <div id="diseases" class="tab-content">
+                <div class="diseases-info">
+                    <h2>Disease Information</h2>
+                    <div class="search-container">
+                        <input type="text" id="diseaseSearch" placeholder="Search for diseases...">
+                        <button id="searchDiseaseBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div id="diseasesList" class="diseases-grid">
+                        <!-- Disease cards will be populated here -->
+                    </div>
+                    <div id="diseaseDetails" class="disease-details"></div>
+                </div>
+            </div>
+
+            <!-- Emergency Tab -->
+            <div id="emergency" class="tab-content">
+                <div class="emergency-info">
+                    <h2>Emergency Contacts</h2>
+                    <div class="emergency-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>If you're experiencing a medical emergency, call immediately!</p>
+                    </div>
+                    
+                    <div class="emergency-contacts">
+                        <div class="contact-section">
+                            <h3>Emergency Services</h3>
+                            <div class="contact-grid">
+                                <div class="contact-card emergency">
+                                    <i class="fas fa-ambulance"></i>
+                                    <h4>Ambulance</h4>
+                                    <p class="contact-number">108</p>
+                                    <button onclick="callNumber('108')" class="call-btn">Call Now</button>
+                                </div>
+                                <div class="contact-card">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h4>Police</h4>
+                                    <p class="contact-number">100</p>
+                                    <button onclick="callNumber('100')" class="call-btn">Call Now</button>
+                                </div>
+                                <div class="contact-card">
+                                    <i class="fas fa-fire"></i>
+                                    <h4>Fire Service</h4>
+                                    <p class="contact-number">101</p>
+                                    <button onclick="callNumber('101')" class="call-btn">Call Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-section">
+                            <h3>Health Helplines</h3>
+                            <div class="contact-grid">
+                                <div class="contact-card">
+                                    <i class="fas fa-phone-medical"></i>
+                                    <h4>National Health Helpline</h4>
+                                    <p class="contact-number">1800-180-1104</p>
+                                    <button onclick="callNumber('18001801104')" class="call-btn">Call Now</button>
+                                </div>
+                                <div class="contact-card">
+                                    <i class="fas fa-brain"></i>
+                                    <h4>Mental Health</h4>
+                                    <p class="contact-number">08046110007</p>
+                                    <button onclick="callNumber('08046110007')" class="call-btn">Call Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergency-tips">
+                        <h3>Emergency Signs - Seek Immediate Help</h3>
+                        <ul>
+                            <li><i class="fas fa-exclamation-circle"></i> Difficulty breathing or shortness of breath</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Chest pain or pressure</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Severe bleeding</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Loss of consciousness</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Severe allergic reaction</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Signs of stroke (FAST: Face, Arms, Speech, Time)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Processing your request...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
