@@ -52,6 +52,17 @@ Respond with a brief, friendly greeting and ask how you can help with their heal
 
 Keep it under 50 words and be professional."""
         
+        # Check if it's a non-medical query (math, general questions, etc.)
+        non_medical_patterns = ['+', '-', '*', '/', '=', 'calculate', 'what is', 'how much', 'math', 'number']
+        if any(pattern in user_message.lower() for pattern in non_medical_patterns):
+            return f"""The user asked: "{user_message}"
+
+This appears to be a non-medical question. Politely redirect them to health topics.
+
+Respond: "I'm a medical assistant focused on health-related questions. For math or general queries, please use appropriate tools. How can I help with your health concerns instead?" 
+
+Keep it under 50 words."""
+        
         # For medical queries
         prompt = f"""You are an AI medical assistant. Provide VERY SHORT, focused medical information.
 

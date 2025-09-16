@@ -54,3 +54,20 @@ INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:20:06] "GET /api/disease/gastritis H
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:20:46] "POST /api/chat HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:21:21] "POST /api/chat HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:22:08] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:24:29] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:25:54] "POST /api/symptoms-check HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:26:16] "GET /api/disease/common_cold HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:28:22] "POST /api/symptoms-check HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:28:33] "POST /api/symptoms-check HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:28:41] "POST /api/symptoms-check HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:29:11] "POST /api/symptoms-check HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:30:02] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-773-145
