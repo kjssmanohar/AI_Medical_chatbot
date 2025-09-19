@@ -68,21 +68,25 @@ Keep it under 50 words."""
 
 STRICT RULES:
 - Maximum 150 words total
-- Use bullet points
+- Use bullet points with HTML colored headings
 - 2-3 conditions max
 - Brief advice only
 - Always end with "Consult a doctor"
 
 USER: {user_message}
 
-Format:
-**Possible causes:**
+Format (use these exact HTML colors):
+<span style="color: #3498db; font-weight: bold;">🔍 Possible causes:</span>
 • Condition 1
 • Condition 2
 
-**Quick advice:**
+<span style="color: #e74c3c; font-weight: bold;">⚡ Quick advice:</span>
 • Action 1
 • Action 2
+
+<span style="color: #f39c12; font-weight: bold;">👨‍⚕️ When to see doctor:</span> [brief]
+
+Consult a doctor for proper diagnosis.
 
 **When to see doctor:** [brief]
 

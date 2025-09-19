@@ -1,0 +1,90 @@
+nohup: ignoring input
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+ * Serving Flask app 'integrated_app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.146:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 142-149-141
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:27:43] "[36mGET / HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:27:44] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:27:44] "[36mGET /script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:27:44] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:27:44] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:27:44] "GET /api HTTP/1.1" 200 -
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1758306498.803877    7343 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:28:20] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:28:49] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:36:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:36:56] "GET /styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:36:56] "[36mGET /script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:36:56] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:36:56] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:36:56] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:37:00] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 18:40:08] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:27] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:27] "GET /script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:28] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:28] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:28] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:31] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:00:54] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:01:16] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:01:42] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:01:50] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:02:04] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:02:29] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:02:38] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspaces/AI_Medical_chatbot/backend/integrated_app.py', reloading
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Gemini 2.0 Flash model initialized successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 142-149-141
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:17:20] "[36mGET / HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:17:20] "GET /styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:17:20] "GET /script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:17:20] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:17:20] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:17:20] "GET /api/emergency HTTP/1.1" 200 -
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1758309558.271988   31010 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:19:20] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:27:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:28:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:28:04] "GET /script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:28:04] "GET /styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:28:04] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:28:04] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:28:04] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:29:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:29:47] "[36mGET /script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:29:47] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:29:48] "GET /api/diseases HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:29:48] "GET /api/emergency HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:29:48] "GET /api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:34:43] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:34:51] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:34:55] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:35:02] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Sep/2025 19:35:32] "POST /api/chat HTTP/1.1" 200 -
+🏥 AI Medical Chatbot Server Starting...
+🌐 Frontend and API available at: http://localhost:5000
+📱 In codespace, check the 'Ports' tab for the public URL
+🔧 API endpoints available at: /api/*

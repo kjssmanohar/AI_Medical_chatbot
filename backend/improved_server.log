@@ -46,3 +46,8 @@ INFO:werkzeug: * Restarting with stat
 INFO:__main__:Gemini 2.0 Flash model initialized successfully
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 128-773-145
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1758055057.089529  145384 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:37:38] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:37:53] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2025 20:38:13] "POST /api/chat HTTP/1.1" 200 -
