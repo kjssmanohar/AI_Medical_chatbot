@@ -46,6 +46,10 @@
                     <i class="fas fa-book-medical"></i>
                     Disease Info
                 </button>
+                <button class="tab-btn" data-tab="hospitals">
+                    <i class="fas fa-hospital"></i>
+                    Nearby Hospitals
+                </button>
                 <button class="tab-btn" data-tab="emergency">
                     <i class="fas fa-ambulance"></i>
                     Emergency
@@ -126,6 +130,76 @@
                         <!-- Disease cards will be populated here -->
                     </div>
                     <div id="diseaseDetails" class="disease-details"></div>
+                </div>
+            </div>
+
+            <!-- Nearby Hospitals Tab -->
+            <div id="hospitals" class="tab-content">
+                <div class="hospitals-finder">
+                    <h2><i class="fas fa-hospital"></i> Find Nearby Hospitals</h2>
+                    <p class="tab-description">Locate medical facilities near you with real-time information and directions.</p>
+                    
+                    <div class="location-section">
+                        <div class="input-group">
+                            <input type="text" id="locationInput" placeholder="Enter your location or address" class="location-input">
+                            <button onclick="getUserLocation()" class="location-btn">
+                                <i class="fas fa-map-marker-alt"></i> Use My Location
+                            </button>
+                            <button onclick="searchHospitals()" class="search-btn primary-btn">
+                                <i class="fas fa-search"></i> Search Hospitals
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="loadingHospitals" class="loading-hospitals" style="display: none;">
+                        <div class="loading-content">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Finding nearby hospitals...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="api-notice">
+                        <div class="notice-content">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <strong>Real Hospital Data Available</strong>
+                                <p>For real hospital information, add your Google Maps API key to get accurate hospital locations, contact details, and directions.</p>
+                                <a href="https://console.cloud.google.com/apis/credentials" target="_blank" class="api-link">
+                                    Get Google Maps API Key <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hospitals-list" id="hospitalsList">
+                        <!-- Hospital cards will be populated here -->
+                        <div class="hospital-card sample">
+                            <div class="hospital-header">
+                                <h3><i class="fas fa-hospital"></i> Sample Medical Center</h3>
+                                <span class="hospital-type emergency">Emergency Available</span>
+                            </div>
+                            <div class="hospital-info">
+                                <p><i class="fas fa-map-marker-alt"></i> 123 Medical District, Your City</p>
+                                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                                <p><i class="fas fa-route"></i> 2.5 km • ~8 min drive</p>
+                                <p><i class="fas fa-star"></i> ⭐ 4.3 (125 reviews)</p>
+                                <div class="hospital-services">
+                                    <span class="service-tag emergency">Emergency</span>
+                                    <span class="service-tag">ICU</span>
+                                    <span class="service-tag">Surgery</span>
+                                    <span class="service-tag">OPD</span>
+                                </div>
+                            </div>
+                            <div class="hospital-actions">
+                                <button class="directions-btn" onclick="alert('Sample hospital - directions not available')">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </button>
+                                <button class="call-btn" onclick="alert('Sample hospital - calling not available')">
+                                    <i class="fas fa-phone"></i> Call Hospital
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

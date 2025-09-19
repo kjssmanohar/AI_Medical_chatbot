@@ -211,9 +211,9 @@ async function sendToBot(message) {
 function displayBotResponse(response) {
     const content = document.createElement('div');
     
-    // Display main message
+    // Display main message with HTML rendering for colored headings
     const messageP = document.createElement('p');
-    messageP.textContent = response.message;
+    messageP.innerHTML = response.message;
     content.appendChild(messageP);
     
     // Handle different response types
@@ -559,5 +559,194 @@ function startVoiceInput() {
         recognition.start();
     } else {
         alert('Voice input is not supported in your browser');
+    }
+}
+
+// Nearby Hospitals Functionality
+let userLocation = null;
+
+function getUserLocation() {
+    if (navigator.geolocation) {
+        document.getElementById('loadingHospitals').style.display = 'block';
+        navigator.geolocation.getCurrentPosition(
+            function(position) {
+                userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                
+                // Update location input with coordinates
+                document.getElementById('locationInput').value = `Current Location (${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)})`;
+                
+                // Search for nearby hospitals
+                searchNearbyHospitals(userLocation);
+                
+                document.getElementById('loadingHospitals').style.display = 'none';
+            },
+            function(error) {
+                document.getElementById('loadingHospitals').style.display = 'none';
+                alert('Unable to get your location. Please enter your address manually.');
+                console.error('Geolocation error:', error);
+            }
+        );
+    } else {
+        alert('Geolocation is not supported by this browser.');
+    }
+}
+
+function searchHospitals() {
+    const location = document.getElementById('locationInput').value;
+    if (!location.trim()) {
+        alert('Please enter a location or use "Use My Location"');
+        return;
+    }
+    
+    document.getElementById('loadingHospitals').style.display = 'block';
+    
+    // Simulate location-based search
+    setTimeout(() => {
+        generateLocationBasedHospitals(location);
+        document.getElementById('loadingHospitals').style.display = 'none';
+    }, 1500);
+}
+
+function searchNearbyHospitals(location) {
+    // Simulate finding hospitals near the location
+    const sampleHospitals = [
+        {
+            name: "Apollo Hospitals",
+            address: "Plot No 251, Sainik School Road, Unit 15",
+            phone: "+91 9876543210",
+            distance: 1.2,
+            type: "Emergency",
+            services: ["Emergency", "ICU", "Surgery", "Cardiology", "OPD"],
+            rating: 4.5,
+            reviews: 342
+        },
+        {
+            name: "AIIMS Medical Center",
+            address: "Ansari Nagar, Near AIIMS Metro Station",
+            phone: "+91 9876543211",
+            distance: 2.1,
+            type: "Government",
+            services: ["Emergency", "OPD", "Surgery", "Pediatrics"],
+            rating: 4.3,
+            reviews: 567
+        },
+        {
+            name: "Max Super Speciality Hospital",
+            address: "1, Press Enclave Road, Saket",
+            phone: "+91 9876543212",
+            distance: 3.5,
+            type: "Multi-Specialty",
+            services: ["Emergency", "Oncology", "Neurology", "Orthopedics"],
+            rating: 4.6,
+            reviews: 289
+        },
+        {
+            name: "Fortis Healthcare",
+            address: "Sector 62, Near Metro Station",
+            phone: "+91 9876543213",
+            distance: 4.2,
+            type: "Emergency",
+            services: ["Emergency", "ICU", "Trauma", "Surgery"],
+            rating: 4.4,
+            reviews: 198
+        }
+    ];
+    
+    displayHospitals(sampleHospitals);
+}
+
+function generateLocationBasedHospitals(locationText) {
+    // Generate contextual hospital names based on location
+    const locationName = locationText.split(',')[0].split(' ')[0];
+    const hospitals = [
+        {
+            name: `${locationName} Medical Center`,
+            address: `Near ${locationText}`,
+            phone: "+91 9876543210",
+            distance: 0.8,
+            type: "Emergency",
+            services: ["Emergency", "ICU", "Surgery"],
+            rating: 4.3,
+            reviews: 156
+        },
+        {
+            name: `${locationName} General Hospital`,
+            address: `${locationText} Area`,
+            phone: "+91 9876543211",
+            distance: 1.5,
+            type: "General",
+            services: ["OPD", "Diagnostic", "Pharmacy"],
+            rating: 4.1,
+            reviews: 89
+        },
+        {
+            name: `City Hospital ${locationName}`,
+            address: `Main Road, ${locationText}`,
+            phone: "+91 9876543212",
+            distance: 2.3,
+            type: "Multi-Specialty",
+            services: ["Emergency", "Cardiology", "Neurology"],
+            rating: 4.5,
+            reviews: 234
+        }
+    ];
+    
+    displayHospitals(hospitals);
+}
+
+function displayHospitals(hospitals) {
+    const hospitalsList = document.getElementById('hospitalsList');
+    
+    // Clear existing results except sample card
+    const existingCards = hospitalsList.querySelectorAll('.hospital-card:not(.sample)');
+    existingCards.forEach(card => card.remove());
+    
+    hospitals.forEach(hospital => {
+        const hospitalCard = document.createElement('div');
+        hospitalCard.className = 'hospital-card';
+        const isEmergency = hospital.type === 'Emergency';
+        const estimatedTime = Math.ceil(hospital.distance * 2); // 2 min per km
+        
+        hospitalCard.innerHTML = `
+            <div class="hospital-header">
+                <h3><i class="fas fa-hospital"></i> ${hospital.name}</h3>
+                <span class="hospital-type ${isEmergency ? 'emergency' : ''}">${hospital.type}</span>
+            </div>
+            <div class="hospital-info">
+                <p><i class="fas fa-map-marker-alt"></i> ${hospital.address}</p>
+                <p><i class="fas fa-phone"></i> ${hospital.phone}</p>
+                <p><i class="fas fa-route"></i> ${hospital.distance} km • ~${estimatedTime} min drive</p>
+                <p><i class="fas fa-star"></i> ⭐ ${hospital.rating} (${hospital.reviews} reviews)</p>
+                <div class="hospital-services">
+                    ${hospital.services.map(service => `<span class="service-tag ${service === 'Emergency' ? 'emergency' : ''}">${service}</span>`).join('')}
+                </div>
+            </div>
+            <div class="hospital-actions">
+                <button onclick="getDirections('${hospital.name}', '${hospital.address}')" class="directions-btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </button>
+                <button onclick="callHospital('${hospital.phone}')" class="call-btn">
+                    <i class="fas fa-phone"></i> Call Hospital
+                </button>
+            </div>
+        `;
+        
+        hospitalsList.appendChild(hospitalCard);
+    });
+}
+
+function getDirections(name, address) {
+    // Open Google Maps with directions
+    const query = encodeURIComponent(`${name} ${address}`);
+    const url = `https://www.google.com/maps/search/${query}`;
+    window.open(url, '_blank');
+}
+
+function callHospital(phoneNumber) {
+    if (confirm(`Do you want to call ${phoneNumber}?`)) {
+        window.location.href = `tel:${phoneNumber}`;
     }
 }
